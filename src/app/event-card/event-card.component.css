@@ -1,0 +1,18 @@
+.event-card {
+  margin-top: 10px;
+  background-color: #f1f1f1;
+}
+.app-content {
+  display: flex;
+  justify-content: center;
+}
+.event-header {
+  text-align: center;
+}
+
+mat-card img{
+  object-fit: contain;
+  padding: 10px;
+  width: 800px;
+  height: 500px;
+}

@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>{{ data.action === 'create' ? 'Create ticket' : 'Validate ticket' }}</h2>
+<mat-dialog-content class="mat-typography">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter validation code</mat-label>
+    <input matInput type="number" [(ngModel)]="ticket.validationCode" required>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close="">Cancel</button>
+  <button mat-button [mat-dialog-close]="true" (click)="submit(ticket)" cdkFocusInitial [disabled]="!ticket.validationCode">
+    {{ data.action === 'create' ? 'Create' : 'Validate' }}
+  </button>
+</mat-dialog-actions>

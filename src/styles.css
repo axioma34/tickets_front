@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+/*.custom-modalbox .mat-mdc-dialog-container {*/
+/*  --mdc-dialog-container-color: #f1f1f1;*/
+/*  --mdc-dialog-subhead-color: #000000;*/
+/*  --mdc-text-button-label-text-color: #000000 !important;*/
+/*}*/
+
+/*.custom-modalbox .mat-mdc-dialog-container.mdc-button {*/
+/*color: black!important;*/
+/*}*/
+
+.mat-mdc-snack-bar-container.error-alert {
+   --mdc-snackbar-container-color: rgba(213, 17, 17, 0.83);
+   --mat-mdc-snack-bar-button-color: #fff;
+   --mdc-snackbar-supporting-text-color: #fff;
+}
+
+.mat-mdc-snack-bar-container.success-alert {
+  --mdc-snackbar-container-color: rgba(17, 189, 32, 0.83);
+  --mat-mdc-snack-bar-button-color: #fff;
+  --mdc-snackbar-supporting-text-color: #fff;
+}
