@@ -2,7 +2,6 @@
   <mat-card class="example-card" *ngFor="let event of events" [routerLink]="['/events', event.id]" [state]="event">
     <mat-card-header>
       <mat-card-title> {{ event.name }}</mat-card-title>
-      <mat-card-subtitle>{{ event.location }}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image [src]="event.photo" alt="Photo">
     <mat-card-content>
